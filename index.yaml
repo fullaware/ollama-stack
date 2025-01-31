@@ -1,0 +1,51 @@
+apiVersion: v1
+entries:
+  ollama:
+  - annotations:
+      artifacthub.io/category: ai-machine-learning
+      artifacthub.io/changes: |
+        - kind: changed
+          description: upgrade app version to 0.5.7
+          links:
+            - name: Ollama release v0.5.7
+              url: https://github.com/ollama/ollama/releases/tag/v0.5.7
+    apiVersion: v2
+    appVersion: 0.5.7
+    created: "2025-01-30T20:15:38.26730382-05:00"
+    description: Get up and running with large language models locally.
+    digest: fb57c2003d0a66aeb7f44cf089589098da20da669e0ad32fc2443f75c69b987e
+    home: https://ollama.ai/
+    icon: https://ollama.ai/public/ollama.png
+    keywords:
+    - ai
+    - llm
+    - llama
+    - mistral
+    kubeVersion: ^1.16.0-0
+    maintainers:
+    - email: contact@otwld.com
+      name: OTWLD
+    name: ollama
+    sources:
+    - https://github.com/ollama/ollama
+    - https://github.com/otwld/ollama-helm
+    type: application
+    urls:
+    - https://newellbrandon.github.io/ollama-stack/charts/ollama-1.4.0.tgz
+    version: 1.4.0
+  ollama-stack:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-30T20:15:38.265883009-05:00"
+    dependencies:
+    - name: ollama
+      repository: https://otwld.github.io/ollama-helm
+      version: 1.4.0
+    description: A Helm chart for Ollama + Open WebUI
+    digest: c3aba1bbb1b87664c6fca2a9b1a8f75662f85b29ef47119148b5029bdea0bc1e
+    name: ollama-stack
+    type: application
+    urls:
+    - https://newellbrandon.github.io/ollama-stack/ollama-stack-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-01-30T20:15:38.262686022-05:00"
