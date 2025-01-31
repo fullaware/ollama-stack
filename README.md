@@ -1,6 +1,6 @@
 # Ollama-Stack = Ollama + OpenWebUI
 Helm repo for Helm Chart to install Ollama + OpenWebUI
-Arthor :: https://github.com/jdtate101
+Author :: https://github.com/jdtate101
 Thanks to https://github.com/otwld/ollama-helm for packaging Ollama as a Helm chart!!
 
 # Installation
