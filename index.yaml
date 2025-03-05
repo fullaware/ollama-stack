@@ -4,16 +4,26 @@ entries:
   - annotations:
       artifacthub.io/category: ai-machine-learning
       artifacthub.io/changes: |
-        - kind: fixed
-          description: broken helm linting with enabled pvcs
+        - kind: changed
+          description: upgrade app version to 0.5.13
           links:
-            - name: PR#133
-              url: https://github.com/otwld/ollama-helm/pull/133
+            - name: Ollama release v0.5.13
+              url: https://github.com/ollama/ollama/releases/tag/v0.5.13
+        - kind: added
+          description: add deployment.labels
+          links:
+            - name: PR#148
+              url: https://github.com/otwld/ollama-helm/pull/148
+        - kind: fixed
+          description: remove xargs from postStart script
+          links:
+            - name: PR#149
+              url: https://github.com/otwld/ollama-helm/pull/149
     apiVersion: v2
-    appVersion: 0.5.7
-    created: "2025-02-07T11:22:12.325763-05:00"
+    appVersion: 0.5.13
+    created: "2025-03-05T08:39:16.225844997-05:00"
     description: Get up and running with large language models locally.
-    digest: 16dfbb9417a3827ae73c6cb55c65851ecfc67f7f5b18544e681bab0172df8515
+    digest: 5cd3dea3b277e43e1fbc47d84eeb869174d4ba49b7190e836cf099d680482647
     home: https://ollama.ai/
     icon: https://ollama.ai/public/ollama.png
     keywords:
@@ -31,35 +41,21 @@ entries:
     - https://github.com/otwld/ollama-helm
     type: application
     urls:
-    - https://newellbrandon.github.io/ollama-stack/charts/ollama-1.4.1.tgz
-    version: 1.4.1
+    - https://newellbrandon.github.io/ollama-stack/charts/ollama-1.8.0.tgz
+    version: 1.8.0
   ollama-stack:
   - apiVersion: v2
-    appVersion: 1.4.1
-    created: "2025-02-07T11:22:12.324568-05:00"
+    appVersion: 1.8.0
+    created: "2025-03-05T08:39:16.224297377-05:00"
     dependencies:
     - name: ollama
       repository: https://otwld.github.io/ollama-helm
-      version: 1.4.1
+      version: 1.8.0
     description: A Helm chart for Ollama + Open WebUI
-    digest: 848ab3058b49f5a29d6fc0a0c4bf1867c57baef5a0741c41b3be73fb3867e575
+    digest: 5025ae963469c74d7743de69d4766e634d215868e364f676d0bf92bdc248552b
     name: ollama-stack
     type: application
     urls:
-    - https://newellbrandon.github.io/ollama-stack/ollama-stack-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-02-07T11:22:12.321909-05:00"
-    dependencies:
-    - name: ollama
-      repository: https://otwld.github.io/ollama-helm
-      version: 1.4.0
-    description: A Helm chart for Ollama + Open WebUI
-    digest: c3aba1bbb1b87664c6fca2a9b1a8f75662f85b29ef47119148b5029bdea0bc1e
-    name: ollama-stack
-    type: application
-    urls:
-    - https://newellbrandon.github.io/ollama-stack/ollama-stack-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-02-07T11:22:12.320054-05:00"
+    - https://newellbrandon.github.io/ollama-stack/ollama-stack-0.3.0.tgz
+    version: 0.3.0
+generated: "2025-03-05T08:39:16.219121751-05:00"

@@ -34,3 +34,14 @@ spec:
         - name: open-webui
           persistentVolumeClaim:
             claimName: open-webui
+  volumeClaimTemplates:
+  - metadata:
+      name: open-webui
+      labels:
+        app: open-webui
+    spec:
+      volumeMode: Filesystem
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
